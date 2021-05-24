@@ -16,7 +16,8 @@ namespace DapperMVCCRUD
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                // we set Employee as default controller
+                defaults: new { controller = "Employee", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
